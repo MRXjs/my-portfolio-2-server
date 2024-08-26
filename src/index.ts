@@ -12,7 +12,7 @@ app.use(express.json({ limit: '50mb' }));
 // cors => cross origin resource sharing
 app.use(
     cors({
-        origin: ['http://localhost:3000', 'https://mahumacademy.lk'],
+        origin: ['http://localhost:3000', 'https://suresranathunga.com'],
         credentials: true,
     }),
 );
