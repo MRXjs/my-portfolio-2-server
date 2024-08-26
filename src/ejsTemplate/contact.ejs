@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Contact Message</title>
+        <style>
+            body {
+                font-family: 'Arial', sans-serif;
+                background-color: #f9f9f9;
+                color: #444;
+                padding: 20px;
+                margin: 0;
+            }
+            .container {
+                max-width: 600px;
+                background-color: #ffffff;
+                padding: 30px;
+                margin: 0 auto;
+                border-radius: 10px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                border-left: 5px solid #4caf50;
+            }
+            h2 {
+                font-size: 24px;
+                margin-bottom: 20px;
+                color: #4caf50;
+                border-bottom: 2px solid #eee;
+                padding-bottom: 10px;
+            }
+            p {
+                font-size: 16px;
+                line-height: 1.6;
+                margin: 10px 0;
+            }
+            .label {
+                display: inline-block;
+                width: 150px;
+                font-weight: bold;
+                color: #333;
+            }
+            .message {
+                margin-top: 20px;
+                padding: 15px;
+                background-color: #f4f4f4;
+                border-left: 4px solid #4caf50;
+                border-radius: 5px;
+            }
+            .footer {
+                margin-top: 30px;
+                text-align: center;
+                color: #777;
+                font-size: 14px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h2>New Contact Message</h2>
+            <p><span class="label">First Name:</span> <%= firstName %></p>
+            <p><span class="label">Last Name:</span> <%= lastName %></p>
+            <p><span class="label">Email:</span> <%= email %></p>
+            <p><span class="label">Phone Number:</span> <%= phoneNumber %></p>
+            <p><span class="label">Service:</span> <%= service %></p>
+            <div class="message">
+                <p><span class="label">Message:</span></p>
+                <p><%= message %></p>
+            </div>
+        </div>
+        <div class="footer">
+            <p>This message was sent from your portfolio contact form.</p>
+        </div>
+    </body>
+</html>
